@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+
+.cpp{
+    text-align: center;
+    padding: 2%;
+}
+
+.maincpp{
+    height: 65vh;
+    width: 100vw;
+    background-image: url('../images/readcpp.jpg');
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    padding: 200px;
+}
+
+p{
+    /* color: red; */
+    padding: 2%;
+    text-align: justify;
+}
+
+.comments{
+    padding: 2%;
+}
+
+form{
+    padding: 1% 4%;
+    padding-bottom: 4%;
+}
+
+.commentHead{
+    padding-left: 4%;
+}
+
+.commentpara{
+    padding: 3px 4%;
+    width: 90%;
+}
+

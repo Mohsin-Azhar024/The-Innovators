@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    background-color: rgba(27, 19, 19, .8);
+    background-blend-mode: darken;
+    margin: 10% auto;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    display: block;
+  }
+
+  .modal-content h2{
+    padding: 0% 0px 4% 0px;
+    color: white;
+  }
+
+  .modal-content h3{
+    color: white;
+    padding: 0px 0px 4% 0px;
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #DD0038;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #aaa;;
+  }
+  
+
+  
+  
+  .container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    /* font-size: 16px; */
+    border: none;
+    background-color: transparent;
+    box-shadow: 1px 1px 1px #ccc inset;
+    /* border: 1px solid; */
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 12px;
+  }
+  
+  button:hover {
+    /* background-color: #DD0038; */
+    color: #DD0038;
+    font-weight: bold;
+  }
+  
+
+  #loginModal .modal-content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  #signupModal .modal-content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    padding: 0px 12px 0px 0px;
+  }
+  
+  #loginModal .modal-content form input[type="text"],
+  #loginModal .modal-content form input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #signupModal .modal-content form input[type="text"],
+  #signupModal .modal-content form input[type="email"],
+  #signupModal .modal-content form input[type="date"],
+  #signupModal .modal-content form input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button[type="submit"] {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #ccc inset;
+  }
+  
+  form button[type="submit"]:hover {
+    /* background-color: #45a049; */
+    font-weight: bold;
+    color: #DD0038;
+  }
+
+.rememberme{
+  padding: 10px;
+}  
+
+
+  

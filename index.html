@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="extensions/font_awesome/css/all.css">
+    <link rel="stylesheet" href="css/login_signup.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>landing page of website</title>
+</head>
+<body>
+    <div class = "main_sec">
+        <nav>
+            <ul class="firstUL">
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </li>
+            </ul>
+            <ul class="secondUL">    
+                    <li><a href="index.html" id="single_visited">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <a href="contact.html"><button>Take Action</button></a>
+            </ul>  
+        </nav>  
+        
+        <div class="section1">
+            <h2>
+                Lets have some programming 
+            </h2>
+
+            <h1>
+                THE PROGRAMMING WORLD
+            </h1>
+            
+            <a href="contact.html"><button>GET REGISTER</button></a>
+        </div>
+
+    </div>
+
+
+    <!-- Sign in and sign up -->
+
+
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>The Innovators</h2>
+          <button id="loginBtn">Login</button>
+          <button id="signupBtn">Sign Up</button>
+        </div>
+    </div>
+    
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+
+          <!-- <?php
+            if($found){
+                echo "<h3>Invalid Username or password</h3>";
+            }
+          ?> -->
+
+          <form method = "post" action = "login.php">
+            <input type="text" id="username" required placeholder = "Enter Username" name = "name">
+    
+            <input type="password" id="password" required placeholder="Enter password" name = "password">
+           
+            <div class="rememberme">
+                <label for="">Remember me</label>
+                <input type="checkbox" name="remember" id="remember">
+            </div>
+    
+            <button type="submit" name = "submit">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    
+      <div id="signupModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Sign Up</h2>
+          <form method="post" action = "signup.php">
+            <input type="text" id="name" required placeholder="Enter your Name" name="name">
+    
+            <input type="email" id="email" required placeholder="Enter your Email" name = "email">
+    
+            <input type="date" id="dob" required placeholder="Select your Date of Birth" name = dob>
+    
+            <input type="password" id="password" required placeholder="Enter password to be set" name = "password">
+    
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      
+
+      <!-- cards section -->
+
+
+    <div class="latest">
+        <h1>
+            Latest posts
+        </h1>
+    </div>
+
+    <div class="cards">
+        <div id="card1">
+            <img src="images/js2.png" alt="javaScript">
+            <h3>
+                Just start our JS journey
+            </h3>
+            <p>
+                javaScript is widely used scripting language and called the language of browser as alomost 90% or more 
+                websites on browser are made using it. It provides a variety of frameworks that increases its power.
+            </p>
+            <a href="articlejs.html" target="_blank">
+                <button id = "jsRead">Read more..</button>
+            </a>
+        </div>
+        <div id="card2">
+            <img src="images/python.png" alt="python">
+            <h3>
+                Just start our Python journey
+            </h3>
+            <p>
+                Python is a versatile and powerful programming language that can be used for a wide range of purposes i.e web development, Data Analysis and Visualization, Machine Learning and Deep Learning etc.
+            </p>
+            <a href="articlepython.html" target="_blank">
+                <button id = "pythonRead">Read more..</button>
+            </a>
+        </div>
+        <div id="card3">
+            <img src="images/cpp.png" alt="cpp">
+            <h3>
+                Just start our CPP journey
+            </h3>
+            <p>
+                C++ is a powerful programming language known for its efficiency, performance, and low-level control. It is widely used for different purposes i.e  Networking and Network Applications and Security etc.
+            </p>
+            <a href="articlecpp.html" target="_blank">
+                <button id = "cppRead">Read more..</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="homeImage">
+
+        <h1>
+            Coding is Life
+        </h1>
+
+        <p>
+            Our aim is to equip students with the knowledge and skills necessary to become proficient programmers. This involves teaching programming languages, algorithms, data structures, software development methodologies, and other relevant concepts.
+        </p>
+
+        <h2>
+            Come On, let's have some code
+        </h2>
+
+    </div>
+
+
+    <div class="packages">
+        <div class="institutepackage">
+            <h3>
+                Basic Plan
+            </h3>
+            <h1>
+                $49/month
+            </h1>
+            <ul>
+                <li>Complete Web Development</li>
+                <li>Basics of AI</li>
+                <li>Basics of Cyber Security</li>
+                <li>Free canva member</li>
+                <li>City level Seminars</li>
+                <li>Learn with city level professionals</li>
+            </ul>
+            
+            <a href="contact.html"><button>Get started</button></a>
+            
+        </div>
+        
+        <div class="institutepackage">
+            <h3>
+                Standard Plan
+            </h3>
+            <h1>
+                $99/month
+            </h1>
+            <ul>
+                <li>Complete Web Development</li>
+                <li>Intermediate level AI</li>
+                <li>Intermediate level Cyber Security</li>
+                <li>Free canva member</li>
+                <li>Country level Seminars</li>
+                <li>Learn with Country level professionals</li>
+            </ul>
+
+            <a href="contact.html"><button>Get started</button></a>
+            
+            
+        </div>
+        
+        <div class="institutepackage">
+            <h3>
+                Advance Plan
+            </h3>
+            <h1>
+                $149/month
+            </h1>
+            <ul>
+                <li>Web & App Development</li>
+                <li>Advance AI</li>
+                <li>Advance Cyber Security</li>
+                <li>Advance data science</li>
+                <li>World tours and Seminars</li>
+                <li>Learn with top ranking professionals</li>
+            </ul>
+            
+            <a href="contact.html"><button>Get started</button></a>
+            
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="first">
+            <div class="info">
+            <h2>
+                Info
+            </h2>
+            <h4><i class="fas fa-phone-alt"></i>  +923371733897</h4>
+			<h4><i class="fab fa-whatsapp"></i>  +923371733897</h4>
+			<h4><i class="fas fa-envelope"></i>  kashif03371733@gmail.com</h4><br>
+			<h4><button id = "loginsignup">login / signup</button></h4>
+			<form action="logout.php" method = "post" style="display: inline;">
+                <h4><button id = "logout" name="logout" value = "logout">logout</button></h4>
+            </form>
+            </div>
+        <div class="links">
+            <h2>
+                Quick Links
+            </h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="services">
+            <h2>
+                Services
+            </h2>
+                <h4>AI Courses</h4>
+                <h4>DS Courses</h4>
+                <h4>Networking Courses</h4>
+                <h4>App Courses</h4>
+                <h4>CS Courses</h4>
+        </div>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+        </div>
+
+        <div class="second">
+            <h3>
+                <span>The Innovators, </span> All Rights Reserved.
+            </h3>
+        </div>
+
+    </footer>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/login_signup.js"></script>
+</body>
+</html>

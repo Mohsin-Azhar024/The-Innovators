@@ -1,0 +1,1730 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing:border-box;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.firstUL{
+    width: 35%;
+    /* height: 12vh; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.firstUL li{
+    list-style-type: none;
+}
+
+
+.firstUL li a img{
+    height: 180px;
+    width: 200px;
+    padding: 2px 0px;
+}
+
+.secondUL{
+    height: 10vh;
+    width: 60%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondUL li{
+    list-style: none;
+}
+
+.secondUL li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    /* font-size: 18px; */
+    color:  white;
+}
+
+#single_visited{
+    color: #DD0038;
+}
+
+.secondUL li a:hover{
+    color: #DD0038;
+    transition: .5s;
+}
+.secondUL a button{
+    color: white;
+    background-color: #DD0038;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 7px 30px;
+    border-radius: 50px;
+    border: 0px;
+}
+a button:hover{
+    background-color: #a31438;
+    cursor: pointer;
+    transition: .7s;
+}
+
+
+.mainsection{
+    /* background-color: black; */
+    background: rgba(0,0,0,.8)url("../images/77.jpg");
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+}
+
+.section1 h1{
+    padding: .8% 0px .7% 0px;
+    font-style:inherit;
+    font-size: 40px;
+    color:#ff523b;
+    border-bottom: 5px solid #ff523b;
+}
+
+.section1 h2{
+    font-style:inherit;
+    color: aliceblue;
+    padding: 0px 10px;
+}
+
+.section1 p{
+    font-size: 20px;
+    text-align: justify;
+    text-align-last: center;
+    color: aliceblue;
+    padding-top: 2%;
+    width: 80%;
+}
+
+.section h1{
+    padding-left: 2%;
+    padding-top: 60px;
+}
+
+.section h3{
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+.cards1{
+    display: flex;
+    padding-top: 30px;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 25px;   
+}
+
+.main img{
+    
+    /* width: 100%; */
+    transition: all .6s linear;
+    height: 50vh;
+    width: 50vw;
+    
+}
+
+.overlay{
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow: hidden;
+    transition: all .6s linear;
+    background-color: rgba(0,122,174,.6)
+}
+
+.main:hover > .overlay{
+    height: 100%;
+    display: block;
+    border-radius: 30%;
+    text-align: center;
+    transform: rotate(360deg);
+
+}
+
+.main:hover > img{
+    border-radius: 30%;
+}
+
+.text{
+    color:antiquewhite;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text h2{
+    color: #ff523b;
+    text-shadow: 3px 3px black;
+    padding-bottom: 40px;
+}
+.text p{
+    padding: 0px 20px 10px 20px;
+    padding-bottom: 60px;
+}
+
+
+
+
+.mission{
+    display: flex;
+    padding-top: 10%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.miss2 img{
+    height: 30vh;
+    width: 30vw;
+    object-fit: contain;
+    transition: all .4s;
+}
+
+.miss2 img:hover{
+    border-radius: 40px;
+}
+
+.miss2{
+    width: 40%;
+}
+
+.miss1 h1{
+    padding-left: 26%;
+}
+.miss1 p{
+    width: 40vw;
+    padding-top: 3%;
+    padding-left: 27%;
+    padding-left: 27%;
+    text-align: justify;
+}
+
+.miss1 ul {
+    padding-top: 30px;
+    padding-left: 27%;
+}
+
+
+.tutors{
+    padding-left: 5%;
+    padding-top: 70px;
+}
+
+
+.parent{
+    width: 100vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 70px;
+}
+.flex1{
+    width: 30vw;
+    padding-right: 60px;
+    box-shadow: .5px .5px 8px black inset;
+    display: block;
+    margin: 0 auto;
+}
+
+ .flex1 h3{
+    text-align: center;
+    font-size: 100px;
+    color: #ff523b;
+ }
+
+.flex2{
+    width: 30vw;
+    padding-right: 60px;
+    margin: 0px 1%;
+    box-shadow: .5px .5px 8px black inset;
+    display: block;
+    margin: 0 auto;
+}
+.flex2 h3{
+    text-align: center;
+    font-size: 100px;
+    color: #ff523b;
+ }
+
+.flex3{
+    width: 30vw;
+    padding-right: 60px;
+    box-shadow: .5px .5px 8px black inset;
+    display: block;
+    margin: 0 auto;
+
+}
+.flex3 h3{
+    text-align: center;
+    font-size: 100px;
+    color: #ff523b;
+ }
+.flex1 p{
+    text-align: justify;
+    word-spacing: 1px;
+    display: block;
+    padding-left: 50px;
+}
+.flex2 p{
+    text-align: justify;
+    word-spacing: 2px;
+    padding-left: 50px;
+}
+.flex3 p{
+    text-align: justify;
+    padding-left: 50px;
+    
+}
+.flex1 img{
+    height: 100px;
+    width:100px;
+    border-radius: 50px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+.flex2 img{
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    margin-left: 180px;
+    margin-top: 20px;
+    
+}
+.flex3 img{
+    height: 100px;
+    width:100px;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.flex1 h2{
+    margin-left: 140px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px red;
+}
+.flex2 h2{
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px red;
+}
+
+.flex3 h2{
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px red;
+}
+
+
+footer{
+    margin-top: 2%;
+}
+
+footer .first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+footer .first .info h2{
+    color: white;
+    padding: 20px 0px;
+}
+
+
+footer .first .info h4{
+    color: #DD0038;
+    padding: 8px 0px;
+}
+
+
+footer .first .links h2{
+    color: white;
+    padding: 7% 0px;
+}
+
+
+footer .first .links ul li{
+    padding: 10px 0px 5px 5px;
+    /* text-decoration: none; */
+}
+
+footer .first .links ul li a{
+    color: #DD0038;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+footer .first .links ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+footer .first .services h2{
+    color: white;
+    padding: 7% 0px;
+}
+
+
+
+footer .first .services h4{
+    color: #DD0038;
+    padding: 10px 0px 5px 5px;
+    /* text-decoration: none; */
+}
+
+
+
+footer .first .logo img{
+    height: 300px;
+    width: 330px;
+}
+
+
+.second{
+    border-top: 2px solid #221A2F;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.second h3{
+    padding: 2% 0px;
+}
+
+.second h3 span{
+    color: #DD0038;
+    
+}
+
+
+
+@media only screen and (max-width: 380px){
+        
+    .mainsection{
+        height: 115vh;
+    }
+
+    .section1{
+        height: 60vh;
+    }
+
+
+    nav{
+        background-color: black;
+        height: 55vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .firstUL{
+        width: 100%; 
+    }
+
+    .secondUL{
+        height: 20vh;
+        font-size: 20px;
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+
+    .section1 h1{
+        padding: 10% 2%;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section1 h2{
+        text-align: center;
+        font-size: 30px;
+        padding: 0px 2%;
+    }
+
+    .section h1{
+        text-align: center;
+    }
+
+    .section h3{
+        text-align: center;
+    }
+
+    .cards1{
+        display: block;
+    }
+
+    .main img{
+        transition: all .6s linear;
+        height: 30vh;
+        width: 87vw;
+    }
+    
+    
+    .overlay{
+        width: 87vw;
+    }
+
+    .text p{
+        padding: 0px 20px 10px 20px;
+        
+    }
+    
+    .mission{
+        display: block;
+        width: 100%;
+    }
+
+    .miss2 img{
+        height: auto;
+        width: 90vw;
+        object-fit: contain;
+    }
+
+    .miss2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .miss1 h1{
+        padding-left: 0%;
+        text-align: center;
+    }
+    .miss1 p{
+        width: 100%;
+        padding-top: 3%;
+        padding-left: 0%;
+        padding: 20px 20px;
+        text-align: justify;
+    }
+    .miss1 ul {
+        padding-top: 30px;
+        padding-left: 0%;
+        padding: 7px 20px 15px 20px;
+    }
+
+        
+    .tutors{
+        padding-left: 0%;
+        text-align: center;
+    }
+
+
+    .parent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 6%;
+    }
+
+    .flex1{
+        width: 95vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex2{
+        width: 95vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex3{
+        width: 95vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex1 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex2 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+    
+    .flex3 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex1 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex2 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex3 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex1 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex2 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex3 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 380px) and (max-width: 540px){
+    
+    .mainsection{
+        height: 120vh;
+    }
+
+    nav{
+        background-color: black;
+        height: 55vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .firstUL{
+        width: 100%;
+    }
+
+    .secondUL{
+        height: 20vh;
+        font-size: 20px;
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section1{
+        height: 65vh;
+    }
+
+    .section1 h1{
+        padding: 10% 2%;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section1 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .section h1{
+        text-align: center;
+    }
+
+    .section h3{
+        padding-left: 9px;
+        padding-right: 9px;
+        text-align: center;
+    }
+
+    .cards1{
+        display: block;
+    }
+
+    .main{
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+    }
+    
+    .main img{
+        transition: all .6s linear;
+        height: 34vh;
+        width: 87vw;
+    }
+
+    .overlay{
+        width: 87vw;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .text p{
+        padding: 0px 20px 10px 20px;
+        
+    }
+
+    .mission{
+        display: block;
+        width: 100%;
+    }
+
+    .miss2 img{
+        height: auto;
+        width: 90vw;
+        object-fit: contain;
+    }
+
+    .miss2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .miss1 h1{
+        padding-left: 0%;
+        text-align: center;
+    }
+    .miss1 p{
+        width: 100%;
+        padding-top: 3%;
+        padding-left: 0%;
+        padding: 20px 30px;
+        text-align: justify;
+    }
+    .miss1 ul {
+        padding-top: 30px;
+        padding-left: 0%;
+        padding: 7px 30px 15px 30px;
+    }
+
+
+    .tutors{
+        padding-left: 0%;
+        text-align: center;
+    }
+
+
+    .parent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 6%;
+    }
+
+    .flex1{
+        width: 95vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex2{
+        width: 95vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+    
+
+    .flex3{
+        width: 95vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex1 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex2 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+    
+    .flex3 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex1 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex2 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex3 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex1 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex2 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex3 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 540px) and (max-width: 786px){
+
+    .mainsection{
+        height: 120vh;
+    }
+
+    nav{
+        background-color: black;
+        height: 55vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .firstUL{
+        width: 100%;
+    }
+
+    .secondUL{
+        height: 20vh;
+        font-size: 20px;
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section1{
+        height: 65vh;
+    }
+
+    .section1 h1{
+        padding: 6% 2%;
+        text-align: center;
+        font-size: 43px;
+    }
+
+    .section1 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+    .cards1{
+        display: block;
+    }
+
+    .main{
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+    }
+    
+    .main img{
+        transition: all .6s linear;
+        /* height: 34vh; */
+        width: 87vw;
+        height: auto;
+        
+    }
+
+    .overlay{
+        width: 87vw;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .text p{
+        padding: 0px 20px 10px 20px;
+        
+    }
+
+    .mission{
+        display: block;
+        width: 100%;
+    }
+
+    .miss2 img{
+        height: auto;
+        width: 90vw;
+        object-fit: contain;
+    }
+
+    .miss2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .miss1 h1{
+        padding-left: 0%;
+        text-align: center;
+    }
+    .miss1 p{
+        width: 100%;
+        padding-top: 3%;
+        padding-left: 0%;
+        padding: 20px 30px;
+        text-align: justify;
+    }
+    .miss1 ul {
+        padding-top: 40px;
+        padding-left: 0%;
+        padding: 7px 40px 15px 40px;
+    }
+
+    .tutors{
+        padding-left: 0%;
+        text-align: center;
+    }
+
+
+    .parent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-top: 6%;
+    }
+
+    .flex1{
+        width: 85vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex2{
+        width: 85vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+    
+
+    .flex3{
+        width: 85vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex1 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex2 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+    
+    .flex3 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex1 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex2 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex3 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex1 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex2 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex3 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 786px) and (max-width: 990px){
+    
+    .section1 h1{
+        padding: 3% 2%;
+        text-align: center;
+        font-size: 43px;
+    }
+
+    .section1 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .main{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    
+    .main img{
+        transition: all .6s linear;
+        height: 34vh;
+        width: auto;
+        margin: 2px 10px;
+    }
+    
+    
+    .main:hover > .overlay{
+        width: 32vw;
+        margin: 0 auto;
+    }
+
+
+    .text p{
+        padding: 0px 20px 10px 20px;
+        
+    }
+
+
+    .mission{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .miss2 img{
+        width: 40vw;
+        object-fit: contain;
+    }
+
+    .parent{
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-top: 6%;
+    }
+
+    .flex1{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex2{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+    
+
+    .flex3{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex1 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex2 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+    
+    .flex3 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex1 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex2 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex3 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex1 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex2 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex3 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+
+
+}
+
+
+@media only screen and (min-width: 990px) and (max-width: 1100px){
+    .section1 h1{
+        font-size: 50px;
+    }
+
+
+    .main{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    
+    .main img{
+        transition: all .6s linear;
+        height: 34vh;
+        width: auto;
+        margin: 2px 10px;
+    }
+
+    .text p{
+        padding: 0px 20px 10px 20px;
+        
+    }
+
+    .main:hover > .overlay{
+        width: 32vw;
+        margin: 0 auto;
+    }
+
+    .mission{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .miss2 img{
+        width: 40vw;
+        object-fit: contain;
+    }
+
+    .parent{
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-top: 6%;
+    }
+
+    .flex1{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex2{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+    
+
+    .flex3{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex1 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex2 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+    
+    .flex3 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex1 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex2 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex3 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex1 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex2 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex3 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1170px){
+
+    .main{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    
+    .main img{
+        transition: all .6s linear;
+        height: 34vh;
+        width: auto;
+        margin: 2px 10px;
+    }
+
+    .text p{
+        padding: 0px 20px 10px 20px;
+        
+    }
+
+    .main:hover > .overlay{
+        width: 32vw;
+        margin: 0 auto;
+    }
+
+
+    
+    .parent{
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-top: 6%;
+    }
+
+    .flex1{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex2{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+    
+
+    .flex3{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex1 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex2 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+    
+    .flex3 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex1 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex2 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex3 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex1 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex2 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex3 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and (min-width: 1170px) and (max-width: 1350px){
+
+    .main{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    
+    .main img{
+        transition: all .6s linear;
+        height: 40vh;
+        width: auto;
+        margin: 2px 10px;
+    }
+
+    .text p{
+        padding: 0px 20px 10px 20px;
+        
+    }
+
+    .main:hover > .overlay{
+        width: 32vw;
+        margin: 0 auto;
+    }
+
+    
+    .parent{
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-top: 6%;
+    }
+
+    .flex1{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex2{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+    
+
+    .flex3{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex1 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex2 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+    
+    .flex3 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex1 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex2 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex3 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex1 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex2 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex3 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1350px){
+
+    .parent{
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px;
+        padding-top: 6%;
+    }
+
+    .flex1{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex2{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex3{
+        width: 30vw;
+        padding-right: 0px;
+        margin: 3% 0px;
+    }
+
+
+    .flex1 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex2 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex3 p{
+        text-align: justify;
+        word-spacing: 1px;
+        display: block;
+        padding-left: 0px;
+        padding: 25px;
+    }
+
+    .flex1 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex2 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .flex3 img{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex1 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex2 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+
+    .flex3 h2{
+        margin-left: 0px;
+        text-shadow: 1px 1px red;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,471 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+.mainsection{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,.7)url('https://i0.wp.com/cs.utdallas.edu/wp-content/uploads/2015/12/HS-Battle-Brains-Prog-2015-Cont-Students-7.jpg');
+    background-blend-mode: darken;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+nav{
+    padding-top: 10px;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.firstUL{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.firstUL li{
+    list-style-type: none;
+}
+
+
+.firstUL li a img{
+    height: 180px;
+    width: 200px;
+    padding: 2px 0px;
+}
+
+.secondUL{
+    height: 10vh;
+    width: 60%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondUL li{
+    list-style: none;
+}
+
+.secondUL li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    /* font-size: 18px; */
+    color:  white;
+}
+
+#single_visited{
+    color: #DD0038;
+}
+
+.secondUL li a:hover{
+    color: #DD0038;
+    transition: .5s;
+}
+
+
+.secondUL a button{
+    color: white;
+    background-color: #DD0038;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 50px;
+    border: 0px;
+}
+
+
+a button:hover{
+    background-color: #a31438;
+    cursor: pointer;
+    transition: .7s;
+}
+
+
+.section1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.section1 h1{
+    padding: 2% 0%;
+    color: white;
+    font-size: 65px;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section1 h2{
+    font-size: 30px;
+    word-spacing: 2px;
+    color: white;
+}
+
+
+
+.section1 a button{
+    color: white;
+    background-color: #DD0038;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 0px;
+    /* border-bottom: 2px solid black; */
+}
+
+
+.section1 a button:hover{
+    background-color: #a31438;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.competitionHead{
+    padding: 3%;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+#cardapi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer{
+    margin-top: 2%;
+}
+
+footer .first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+footer .first .info h2{
+    color: white;
+    padding: 20px 0px;
+}
+
+
+footer .first .info h4{
+    color: #DD0038;
+    padding: 8px 0px;
+}
+
+
+footer .first .links h2{
+    color: white;
+    padding: 7% 0px;
+}
+
+
+footer .first .links ul li{
+    padding: 10px 0px 5px 5px;
+    /* text-decoration: none; */
+    list-style-type: none;
+}
+
+footer .first .links ul li a{
+    color: #DD0038;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+footer .first .links ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+footer .first .services h2{
+    color: white;
+    padding: 7% 0px;
+}
+
+
+
+footer .first .services h4{
+    color: #DD0038;
+    padding: 10px 0px 5px 5px;
+    /* text-decoration: none; */
+}
+
+
+
+footer .first .logo img{
+    height: 300px;
+    width: 330px;
+}
+
+
+.second{
+    border-top: 2px solid #221A2F;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.second h3{
+    padding: 2% 0px;
+}
+
+.second h3 span{
+    color: #DD0038;
+    
+}
+
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+@media only screen and (max-width: 380px){
+        
+    .main_sec{
+        height: 115vh;
+        background: rgba(0, 0, 0, .7)url('../images/9.jpg');
+        background-blend-mode: darken;
+        background-size: cover;
+    }
+
+    nav{
+        background-color: black;
+        height: 55vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .firstUL{
+        width: 100%; 
+    }
+
+    .secondUL{
+        height: 20vh;
+        font-size: 20px;
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section1{
+        height: 45vh;
+    }
+
+    .section1 h1{
+        padding: 10% 2%;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section1 h2{
+        text-align: center;
+        font-size: 30px;
+        padding: 0px 2%;
+    }
+
+
+
+    .section1 a button{
+        font-size: 17px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 380px) and (max-width: 540px){
+    .main_sec{
+        height: 120vh;
+        background: rgba(0, 0, 0, .7)url('../images/9.jpg');
+        background-blend-mode: darken;
+        background-size: cover;
+    }
+
+    nav{
+        background-color: black;
+        height: 55vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .firstUL{
+        width: 100%;
+    }
+
+    .secondUL{
+        height: 20vh;
+        font-size: 20px;
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section1{
+        height: 45vh;
+    }
+
+    .section1 h1{
+        padding: 10% 2%;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section1 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+
+    .section1 a button{
+        font-size: 17px;
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 540px) and (max-width: 786px){
+    .main_sec{
+        height: 120vh;
+        background: rgba(0, 0, 0, .7)url('../images/9.jpg');
+        background-blend-mode: darken;
+        background-size: cover;
+    }
+
+    nav{
+        background-color: black;
+        height: 55vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .firstUL{
+        width: 100%;
+    }
+
+    .secondUL{
+        height: 20vh;
+        font-size: 20px;
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section1{
+        height: 45vh;
+    }
+
+    .section1 h1{
+        padding: 6% 2%;
+        text-align: center;
+        font-size: 43px;
+    }
+
+    .section1 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+
+    .section1 a button{
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 786px) and (max-width: 990px){
+    
+    .section1 h1{
+        padding: 3% 2%;
+        text-align: center;
+        font-size: 43px;
+    }
+
+    .section1 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+
+    .section1 a button{
+        font-size: 17px;
+    }
+
+    .secondUL a button{
+        padding: 5px 25px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 990px) and (max-width: 1100px){
+    .section1 h1{
+        font-size: 50px;
+    }
+
+    .secondUL a button{
+        padding: 5px 25px;
+    }
+}

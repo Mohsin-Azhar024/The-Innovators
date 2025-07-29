@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="extensions/font_awesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/posts.css">
+    <link rel="stylesheet" href="css/login_signup.css">
+    <title>Posts</title>
+</head>
+<body>
+
+    <div class="mainsection">
+        <nav>
+            <ul class="firstUL">
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </li>
+            </ul>
+            <ul class="secondUL">    
+                <li><a href="index.html" id="single_visited">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="contact.html"><button>Take Action</button></a>
+            </ul>  
+        </nav>  
+    
+    
+        <div class="section1">
+                <h2>
+                    Lets have some Competitions 
+                </h2>
+        
+                <h1>
+                    THE CODING COMPETITIIONS
+                </h1>
+                
+                <a href="#competition"><button>GET REGISTER</button></a>  
+        </div>
+    </div>
+
+
+    <!-- Sign in and sign up -->
+
+
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>The Innovators</h2>
+          <button id="loginBtn">Login</button>
+          <button id="signupBtn">Sign Up</button>
+        </div>
+    </div>
+    
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+
+          <!-- <?php
+            if($found){
+                echo "<h3>Invalid Username or password</h3>";
+            }
+          ?> -->
+
+          <form method = "post" action = "login.php">
+            <input type="text" id="username" required placeholder = "Enter Username" name = "name">
+    
+            <input type="password" id="password" required placeholder="Enter password" name = "password">
+
+            <div class="rememberme">
+                <label for="">Remember me</label>
+                <input type="checkbox" name="remember" id="remember">
+            </div>
+    
+            <button type="submit" name = "submit">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    
+      <div id="signupModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Sign Up</h2>
+          <form method="post" action = "signup.php">
+            <input type="text" id="name" required placeholder="Enter your Name" name="name">
+    
+            <input type="email" id="email" required placeholder="Enter your Email" name = "email">
+    
+            <input type="date" id="dob" required placeholder="Select your Date of Birth" name = dob>
+    
+            <input type="password" id="password" required placeholder="Enter password to be set" name = "password">
+    
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    
+
+
+    <h2 class="competitionHead" id = "competition">
+        Upcoming World Coding Competitions
+    </h2>
+
+
+    <div id="cardapi" class="row">
+
+    </div>
+
+
+    <footer>
+        <div class="first">
+            <div class="info">
+            <h2>
+                Info
+            </h2>
+            <h4><i class="fas fa-phone-alt"></i>  +923371733897</h4>
+			<h4><i class="fab fa-whatsapp"></i>  +923371733897</h4>
+			<h4><i class="fas fa-envelope"></i>  kashif03371733@gmail.com</h4><br>
+			<h4><button id = "loginsignup" style = "font-size: 13px">login / signup</button></h4>
+            </div>
+        <div class="links">
+            <h2>
+                Quick Links
+            </h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="services">
+            <h2>
+                Services
+            </h2>
+                <h4>AI Courses</h4>
+                <h4>DS Courses</h4>
+                <h4>Networking Courses</h4>
+                <h4>App Courses</h4>
+                <h4>CS Courses</h4>
+        </div>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+        </div>
+
+        <div class="second">
+            <h3>
+                <span>The Innovators, </span> All Rights Reserved.
+            </h3>
+        </div>
+
+    </footer>
+
+
+    <script src="JS/posts.js"></script>
+    <script src="JS/login_signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
